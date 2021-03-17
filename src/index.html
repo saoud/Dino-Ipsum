@@ -2,12 +2,48 @@
 <html lang="en-US">
 
 <head>
-  <title>Document</title>
-  <!-- When changing this title must also change title in webpack.config.js plugins section and in package.json -->
+  <title>Hangdino</title>
 </head>
-
 <body>
+  <div class="container">
+    <div class='jumbotron'>
+      <h1>Play Some HangDino</h1>
+      <ul class="instructions">
+        <li>Click "Get Me A Dinosaur"</li>
+        <li>Type a one-letter guess</li>
+        <li>Press enter OR click Submit</li>
+        <li>Keep guessing until the dinosaur is fully drawn (you lose) or all the blanks are filled (you win)</li>
+      </ul>
+    </div>
+    <div class="wrong-pile">
 
+    </div>
+    <div class="current-game-word">
+      <button class="start btn btn-success" id="fetch-word">Get Me A Dinosaur</button>
+      <div class="dinosaur-word"></div>
+      <form class="form-check">
+        <form for="letter-guess" class="form-check">
+        <input class="form-check" type="text" id="letter-guess">
+      </form>
+      <button class="btn btn-primary" id="guess">Guess</button>
+    </div>
+    <div class="blanks-display">
+
+    </div>
+    <div class="dino-drawing">
+
+    </div>
+    <div class="game-end-message">
+
+    </div>
+    <footer class="attributions">
+      <div class="authors">
+        
+      </div>
+      <div class="dino-API">
+
+      </div>
+    </footer>
+  </div>
 </body>
-
 </html>
