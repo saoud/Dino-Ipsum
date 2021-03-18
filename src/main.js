@@ -42,7 +42,7 @@ function showWrongGuesses() {
 // a text entry input field with a submit button, for guessing by letter
 $('#guess').on("click", function(event) {
   event.preventDefault();
-  let letter = $('#letter-guess').val();
+  let letter = $('#letter-guess').val().toLowerCase();
   if (game.badGuesses.includes(letter)) {
     game.message = "You have guessed this one already";
     $('.game-end-message').text(game.message);

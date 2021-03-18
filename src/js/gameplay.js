@@ -3,7 +3,7 @@ export default class Game {
     this.guessesLeft = 7;
     this.message = '';
     this.badGuesses = [];
-    this.currentDino = currentDino;
+    this.currentDino = currentDino.toLowerCase();
     this.progress = [];
   }
 
