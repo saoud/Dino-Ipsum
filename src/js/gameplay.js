@@ -2,7 +2,9 @@ export default class Game {
   constructor (currentDino) {
     this.guessesLeft = 7;
     this.message = '';
+    this.badGuesses = [];
     this.currentDino = currentDino;
+    this.progress = [];
   }
 
   isGameOver() {
@@ -18,8 +20,18 @@ export default class Game {
     } else {
       this.guessesLeft--;
       this.message = "incorrect";
+      this.badGuesses.push(letter);
       return false;
     }
   }
   
-};
+  allLetterIndeces(letter) {
+    let lettersAtTheseIndeces = [];
+    for (let i = 0; i < this.currentDino.length; i++) {
+      if (this.currentDino[i] === letter) {
+        lettersAtTheseIndeces.push(i);
+      }
+    }
+    return lettersAtTheseIndeces;
+  }
+}
