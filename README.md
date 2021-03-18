@@ -36,6 +36,8 @@ Expect:
 
 ## License
 * [MIT](https://github.com/saoud/html-template/blob/main/LICENSE)
-* Copyright 2021 Saoud Rana
+* Copyright 2021 Saoud Rana & Tyler Sinks & HR Williams
 ## Contact
 Saoud Rana githubissues@saoud.dev
+Tyler Sinks tyler.sinks@gmail.com
+HR Williams halrubinwilliams@gmail.com
